@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>My first HTML page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Dog Voting App</h1>
+    <h3>A simple voting system</h3>
+    <hr>
+      <table>
+        <tr>
+          <td valign = "bottom">
+            <img height="200px" src="http://tiny.cc/xy8vky" alt="image failed to load">
+          </td>
+          <td>
+            <button onclick = "increaseCountCatOne()">Me!</button><br>
+            <span><i>Count:<span id="catOneCount">0</span></i></span><br>
+          </td>
+          <td>
+            <img height="200px" src="http://tiny.cc/448vky" alt="image failed to load">
+          </td>
+          <td>
+            <button>Me!</button><br>
+            <span><i>Count:0</i></span><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <img height="200px" src="http://tiny.cc/j58vky" alt="image failed to load">
+          </td>
+          <td>
+            <button>Me!</button><br>
+            <span><i>Count:0</i></span><br>
+          </td>
+          <td>
+            <img height="200px" src="http://tiny.cc/t58vky" alt="image failed to load">
+          </td>
+          <td>
+            <button>Me!</button><br>
+            <span><i>Count:0</i></span><br>
+          </td>
+        </tr>
+
+      </table>
+
+    <br>
+    <script>
+    var cat1 = 0
+      function increaseCountCatOne(){
+        cat1 += 1
+        $("#catOneCount").html(cat1)
+      }
+    </script>
+  </body>
+</html>

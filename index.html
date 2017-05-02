@@ -1,0 +1,124 @@
+<html>
+<head>
+  <title>Xue Xinyi's Online Resume</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="cover.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+  <div class="site-wrapper">
+
+        <div class="site-wrapper-inner">
+
+          <div class="cover-container">
+
+            <div class="masthead clearfix">
+              <div class="inner">
+                <!-- <h3 class="masthead-brand">Xue Xinyi's Online Resume</h3> -->
+                <nav>
+                  <ul class="nav masthead-nav">
+                    <li id="naviHomeTab"><a href="#" onclick = "goToHome()">Home</a></li>
+                    <li id="naviSkillTab"><a href="#" onclick = "goToSkills()">Skills</a></li>
+                    <li id="naviContactTab"><a href="#" onclick = "goToContact()">Contacts</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <div class="inner cover" id="home">
+              <table>
+                <tr>
+                  <td valign = "bottom">
+                    <img height="200px" width = "200px" src="http://tiny.cc/xy8vky" alt="image failed to load" class = "img-circle center-block">
+                  </td>
+                  <td>
+                    <h1 class="masthead-brand">&nbsp;&nbsp;&nbsp;&nbsp;Xue Xinyi's <br>&nbsp;&nbsp;&nbsp;&nbsp;Online Resume</h1>
+                  </td>
+                </tr>
+              </table>
+              <h1 class="cover-heading">Home Page</h1>
+              <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+              <p class="lead">
+                <a href="#" class="btn btn-lg btn-default">Learn more</a>
+              </p>
+            </div>
+
+            <div class="inner cover" id="skills">
+            <h1 class="cover-heading">Skills</h1>
+            <p class="lead">Here are my skills</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+            </p>
+          </div>
+
+          <div class="inner cover" id="contacts">
+            <h1 class="cover-heading">Contacts</h1>
+            <p class="lead">Here are my contacts</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+            </p>
+          </div>
+
+            <div class="mastfoot">
+              <div class="inner">
+                <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <script>
+    $(function(){
+      $("#skills").hide();
+      $("#contacts").hide();
+    })
+
+    function goToHome(){
+      $("#home").slideDown();
+      $("#contacts").hide();
+      $("#skills").hide();
+      $("#naviHomeTab").attr('class','active');
+      $("#naviSkillTab").attr('class','');
+      $("#naviContactTab").attr('class','');
+    }
+
+    function goToSkills(){
+      $("#skills").slideDown();
+      $("#home").hide();
+      $("#contacts").hide();
+      $("#naviHomeTab").attr('class','');
+      $("#naviSkillTab").attr('class','active');
+      $("#naviContactTab").attr('class','');
+    }
+
+    function goToContact(){
+      $("#contacts").slideDown();
+      $("#home").hide();
+      $("#skills").hide();
+      $("#naviHomeTab").attr('class','');
+      $("#naviSkillTab").attr('class','');
+      $("#naviContactTab").attr('class','active');
+    }
+  </script>
+
+
+      <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+      <script src="../../dist/js/bootstrap.min.js"></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>
